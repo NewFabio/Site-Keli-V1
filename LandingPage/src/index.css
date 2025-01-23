@@ -5,7 +5,7 @@
 }
 
 :root {
-  --main-color: #0E424D;
+  --main-color: #0e424d;
   --background-color: #ffffff;
   --alternative-color: #04424f;
   --alternative-color2: #077288;
@@ -14,7 +14,7 @@
 
 body {
   background-color: var(--main-color);
-  font-family: Poppins, Playwrite In, sans-serif;
+  font-family: Poppins, Playwrite, Arial, sans-serif;
 }
 
 button {
