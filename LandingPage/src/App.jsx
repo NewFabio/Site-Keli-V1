@@ -1,8 +1,10 @@
 
 //componentes importados
-import Header from './components/Header/Header'
+import Header from './components/Header/Header';
+import Carousel from './components/Carousel/Carousel';
+import Footer from './components/Footer/Footer';
 
-import './App.css'
+import './App.css';
 
 function App() {
   
@@ -10,6 +12,8 @@ function App() {
   return (
     <>
       <Header />
+      <Carousel />
+      <Footer />
       
     </>
   )
