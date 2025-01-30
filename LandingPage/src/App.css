@@ -16,11 +16,6 @@ body {
   background-color: var(--main-color);
   font-family: Poppins, Playwrite In, sans-serif;
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/images/Banner.png"); */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
 }
 
 button {

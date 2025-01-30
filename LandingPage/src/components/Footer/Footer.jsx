@@ -10,7 +10,7 @@ import './Footer.module.css';
 const Footer = () => {
     return (
         <footer className=" text-light py-4">
-            <div className="container">
+            <div className="container-fluid">
                 {/* Seção de Links */}
                 <div className="row">
                     <div className="col-md-4 mb-3 text-start">
@@ -43,14 +43,14 @@ const Footer = () => {
                         <ul className="list-unstyled">
                             <li className="mb-2" >
                                 <a      
-                                    className='text-decoration-none text-light' href="" 
+                                    className='text-decoration-none' href="" 
                                     target='_blank'>Curso micro completo
                                 </a>
                             </li>
                             <li className="mb-2">
                                 <a 
                                     href=""
-                                    className='text-decoration-none text-light'
+                                    className='text-decoration-none'
                                     target='_blank'
                                 >Curso avançado
                                 </a>
@@ -58,7 +58,7 @@ const Footer = () => {
                             <li className="mb-2">
                                 <a 
                                     href=""
-                                    className='text-decoration-none text-light'
+                                    className='text-decoration-none'
                                     target='_blank'
                                     >Curso design
                                 </a>
@@ -66,7 +66,7 @@ const Footer = () => {
                             <li className="mb-2">
                                 <a 
                                     href=""
-                                    className='text-decoration-none text-light'
+                                    className='text-decoration-none'
                                     target='_blank'
                                     >Curso 2 em 1
                                 </a>
@@ -74,16 +74,14 @@ const Footer = () => {
                             <li className="mb-2">
                                 <a 
                                     href=""
-                                    className='text-decoration-none text-light'
-                                    target='_blank'
+                                    className='text-decoration-none'
                                     >Dowload pdf cuidados pós remoção
                                 </a>
                             </li>
                             <li className="mb-2">
                                 <a 
                                     href=""
-                                    className='link-offset-2 link-underline link-underline-opacity-100 text-light'
-                                    target='_blank'
+                                    className='text-decoration-none'
                                     >Dowload pdf cuidados sobrancelha
                                 </a>
                             </li>
