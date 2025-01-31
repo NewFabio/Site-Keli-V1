@@ -10,20 +10,26 @@ import './Footer.module.css';
 const Footer = () => {
     return (
         <footer className=" text-light py-4">
-            <div className="container-fluid">
+            <div className="container text-start">
                 {/* Seção de Links */}
                 <div className="row">
-                    <div className="col-md-4 mb-3 text-start">
+                    <div className="col-md-4 mb-3">
                         <h5 style={{textAlign: "center"}}>Sobre Nós</h5>
                         <p>
-                        Somos uma empresa dedicada a fornecer os melhores serviços para nossos clientes, com qualidade e eficiência.
+                            Nosso espaço foi pensado para proporcionar conforto, segurança e um atendimento exclusivo. Trabalhamos com sobrancelhas fio a fio, sempre priorizando a individualidade de cada rosto. Além disso, oferecemos cursos para quem deseja ingressar no mundo da micropigmentação e se tornar um profissional de excelência.
+                        </p>
+                        <p>
+                            A beleza está nos detalhes, e o nosso compromisso é trazer a melhor versão de você mesma.
+                        </p>
+                        <p>
+                            Agende sua visita e venha viver essa experiência!
                         </p>
                     </div>
 
                     {/* Redes sociais */}
                     <div className=" col-md-4 mb-3 text-start">
                         <h5 style={{textAlign: "center"}}>Redes Sociais</h5>
-                        <div className='d-flex justify-content-around'>
+                        <div className='d-flex justify-content-evenly'>
                             <a href="https://facebook.com">
                                 <img src={facebook} alt="Simbolo do facebook" />
                             </a>

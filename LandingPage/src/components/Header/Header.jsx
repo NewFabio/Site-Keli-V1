@@ -1,4 +1,5 @@
-
+import React from 'react';
+import { Link } from 'react-router-dom';
 function Header() {
     return (
         <div className="navbar navbar-expand-md navbar-dark" style={{backgroundColor: "#0E424D"}}>
@@ -10,16 +11,16 @@ function Header() {
                 <div className="collapse navbar-collapse  justify-content-end" id="navbarHumburguerMenu">
                     <ul className="navbar-nav text-center">
                         <li className="nav-item">
-                            <a href="#" className="nav-link" aria-current="page">Home</a>
+                            <Link to="/sobre" className="nav-link" aria-current="page">Sobre o Estúdio Delicata</Link>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link" aria-current="page">About</a>
+                            <Link to="/serviços" className="nav-link" aria-current="page">Serviços</Link>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link" aria-current="page">Services</a>
+                            <Link to="/cursos" className="nav-link" aria-current="page">Cursos</Link>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link" aria-current="page">Contact</a>
+                            <Link to="/cuidados" className="nav-link" aria-current="page">Cuidados</Link>
                         </li>
                     </ul>
                 </div>
