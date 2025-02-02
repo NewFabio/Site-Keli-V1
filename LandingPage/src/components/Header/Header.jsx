@@ -1,6 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 function Header() {
+
+    const handleClick = () => {
+        const navbarCollapse = document.getElementById('navbarHumburguerMenu');
+        if (navbarCollapse) {
+            navbarCollapse.classList.remove('show');  // Fecha o menu
+        }
+    };
+
     return (
         <div className="navbar navbar-expand-md navbar-dark" style={{backgroundColor: "#0E424D"}}>
             <nav className="container">
@@ -11,16 +19,16 @@ function Header() {
                 <div className="collapse navbar-collapse  justify-content-end" id="navbarHumburguerMenu">
                     <ul className="navbar-nav text-center">
                         <li className="nav-item">
-                            <Link to="/sobre" className="nav-link" aria-current="page">Sobre o Estúdio Delicata</Link>
+                            <Link to="/" className="nav-link" aria-current="page" onClick={handleClick}>O Estúdio Delicata</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/serviços" className="nav-link" aria-current="page">Serviços</Link>
+                            <Link to="/serviços" className="nav-link" aria-current="page" onClick={handleClick}>Serviços</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/cursos" className="nav-link" aria-current="page">Cursos</Link>
+                            <Link to="/cursos" className="nav-link" aria-current="page" onClick={handleClick}>Cursos</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/cuidados" className="nav-link" aria-current="page">Cuidados</Link>
+                            <Link to="/cuidados" className="nav-link" aria-current="page" onClick={handleClick}>Cuidados</Link>
                         </li>
                     </ul>
                 </div>

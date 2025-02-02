@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="container text-start">
                 {/* Seção de Links */}
                 <div className="row">
-                    <div className="col-md-4 mb-3">
+                    <div className="col-md-4 mb-3">   
                         <h5 style={{textAlign: "center"}}>Sobre Nós</h5>
                         <p>
                             Nosso espaço foi pensado para proporcionar conforto, segurança e um atendimento exclusivo. Trabalhamos com sobrancelhas fio a fio, sempre priorizando a individualidade de cada rosto. Além disso, oferecemos cursos para quem deseja ingressar no mundo da micropigmentação e se tornar um profissional de excelência.
@@ -25,6 +25,7 @@ const Footer = () => {
                             Agende sua visita e venha viver essa experiência!
                         </p>
                     </div>
+                    
 
                     {/* Redes sociais */}
                     <div className=" col-md-4 mb-3 text-start">
@@ -98,6 +99,7 @@ const Footer = () => {
                 {/* Linha de Direitos Autorais */}
                 <div className="text-center mt-3">
                     <p className="mb-0">&copy; 2025 Estúdio Delicata. Todos os direitos reservados.</p>
+                    <p className="mb-0">Desenvolvido By <a href="#">Fabio Developer</a>.</p>
                 </div>
             </div>
         </footer>

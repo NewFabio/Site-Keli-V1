@@ -2,7 +2,7 @@ import React from "react";
 
 const Carousel = () => {
     return (
-        <div id="carouselIndicador" className="carousel slide w-auto h-auto" data-bs-ride= "carousel">
+        <div id="carouselIndicador" className="carousel slide w-auto h-auto mb-3" data-bs-ride= "carousel">
             <div className="carousel-indicators" style={{filter: "invert(50%) sepia(100%) saturate(1000%) hue-rotate(200deg) brightness(90%) contrast(85%)"}}>
                 <button 
                     type="button" 
@@ -28,21 +28,21 @@ const Carousel = () => {
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img src="https://placehold.co/300x100" alt="imagem" className="d-block w-100" />
-                    <div className="carousel-caption  d-sm-block text-dark">
+                    <div className="carousel-caption d-none d-md-block text-dark">
                         <h5>Slide 1</h5>
                         <p>Texto sobre o slide 1</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src="https://placehold.co/300x100" alt="imagem" className="d-block w-100" />
-                    <div className="carousel-caption  d-sm-block text-dark">
+                    <div className="carousel-caption d-none d-md-block text-dark">
                         <h5>Slide 2</h5>
                         <p>Texto sobre o slide 2</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src="https://placehold.co/300x100" alt="imagem" className="d-block w-100" />
-                    <div className="carousel-caption d-sm-block text-dark">
+                    <div className="carousel-caption d-none d-md-block text-dark">
                         <h5>Slide 3</h5>
                         <p>Texto sobre o slide 3</p>
                     </div>
