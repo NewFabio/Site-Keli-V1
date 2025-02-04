@@ -5,7 +5,7 @@ import {motion} from 'motion/react';
 import FadeIn from "../components/Motion/FadeIn";
 
 // import carousel
-import Carousel from '../components/Carousel/Carousel';
+import Carousel from '../components/Carousel/CarouselPubli';
 
 // import imagem
 import woman from '../../src/images/woman.jpg';
@@ -133,7 +133,7 @@ const Sobre = () => {
                         whileInView={'show'}
                         viewport={{once: true, amount: 0.5}}
                         className="col-12 col-md-6 border border-5 w-100" style={imagem3}>
-                    </motion.div>                 
+                    </motion.div>            
                 </div>
             </div>
         </section>

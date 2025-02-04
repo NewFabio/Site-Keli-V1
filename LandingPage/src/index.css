@@ -28,6 +28,6 @@ input {
   border: none;
 }
 
-a {
+a, ul, li {
   text-decoration: none;
 }
