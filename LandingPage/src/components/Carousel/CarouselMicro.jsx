@@ -1,8 +1,5 @@
 import React from "react";
 
-// Css
-import styles from './CarouselMicro.module.css';
-
 // imagens
 import img1 from '../../images/img1.jpg';
 import img2 from '../../images/img2.jpg';
@@ -16,35 +13,35 @@ import img14 from '../../images/img14.jpg';
 
 const Carousel = () => {
     return (
-        <div className="container-fluid">
-            <div id="carouselIndicador" className='carousel slide carousel-fade carousel-fluid' data-bs-ride= "carousel">
+        <div style={{width: 'auto'}}>
+            <div id="carouselIndicador" className='carousel slide carousel-fade' data-bs-ride= "carousel">
                 <div className='carousel-inner border border-5'>
                     <div className='carousel-item active'>
                         <img src={img1} alt="foto sobrancelhas e olho verde" className='d-block w-100 '/>
                     </div>
                     <div className="carousel-item">
-                        <img src={img2} alt="foto sobrancelhas e olho" className='d-block w-100 h-100 object-fit-cover object-position-center' />
+                        <img src={img2} alt="foto sobrancelhas e olho" className='d-block w-100' />
                     </div>
                     <div className="carousel-item">
-                        <img src={img3} alt="sobrancelhas" className='d-block w-100 h-100 object-fit-cover object-position-center' />
+                        <img src={img3} alt="sobrancelhas" className='d-block w-100' />
                     </div>
                     <div className="carousel-item">
-                        <img src={img7} alt="imagem" className='d-block w-100 h-100 object-fit-cover object-position-center' />
+                        <img src={img7} alt="imagem" className='d-block w-100' />
                     </div>
                     <div className="carousel-item">
-                        <img src={img8} alt="imagem" className='d-block w-100 h-100 object-fit-cover object-position-center' />
+                        <img src={img8} alt="imagem" className='d-block w-100' />
                     </div>
                     <div className="carousel-item">
-                        <img src={img10} alt="imagem" className='d-block w-100 h-100 object-fit-cover object-position-center' />
+                        <img src={img10} alt="imagem" className='d-block w-100' />
                     </div>
                     <div className="carousel-item">
-                        <img src={img12} alt="imagem" className='d-block w-100 h-100 object-fit-cover object-position-center' />
+                        <img src={img12} alt="imagem" className='d-block w-100' />
                     </div>
                     <div className="carousel-item">
-                        <img src={img13} alt="imagem" className='d-block w-100 h-100 object-fit-cover object-position-center' />
+                        <img src={img13} alt="imagem" className='d-block w-100' />
                     </div>
                     <div className="carousel-item">
-                        <img src={img14} alt="imagem" className='d-block w-100 h-100 object-fit-cover object-position-center' />
+                        <img src={img14} alt="imagem" className='d-block w-100' />
                     </div>
                 </div>
                 <button 
