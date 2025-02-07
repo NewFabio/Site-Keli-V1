@@ -31,7 +31,7 @@ const Serviços = () => {
     };
 
     return (
-        <section className="container my-3">
+        <section className='container my-3'>
             <div className="d-flex flex-column align-items-center text-start">
                 <h1 className="text-light fs-1 text-center fw-bold text-wrap">MICROPIGMENTAÇÃO DE SOBRANCELHAS</h1>
                 
@@ -46,7 +46,7 @@ const Serviços = () => {
                 </ul>
             </div>
             <Micro />
-            <div className="d-flex flex-column align-items-center text-start">
+            <div className="d-flex flex-column align-items-center text-start pt-4">
                 <h1 className="text-light fs-1 text-center fw-bold text-wrap p-2">Remoção de Micropigmentação e Tatuagens a Laser</h1>
                 
                 <h3 className="text-light text-center fw-bold">Diga Adeus ao Que Já Não Combina Consigo!</h3>
