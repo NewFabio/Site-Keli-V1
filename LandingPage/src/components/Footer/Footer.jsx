@@ -5,7 +5,7 @@ import instagram from '../../images/instagram.png';
 import facebook from '../../images/facebook.png';
 import whatsapp from '../../images/whatsapp.png';
 
-import './Footer.module.css';
+import styles from './Footer.module.css';
 
 const Footer = () => {
     return (
@@ -31,17 +31,17 @@ const Footer = () => {
                     <div className=" col-md-4 mb-3 text-start">
                         <h5 style={{textAlign: "center"}}>Redes Sociais</h5>
                         <div className='d-flex justify-content-evenly'>
-                            <a href="https://facebook.com">
-                                <img src={facebook} alt="Simbolo do facebook" />
+                            <a href="https://www.facebook.com/keli.oliveira.986/" target='_blank'>
+                                <img src={facebook} alt="Simbolo do facebook"  className={`${styles.FooterImg}`}/>
                             </a>
-                            <a href="https://instagram.com">
-                                <img src={instagram} alt="Simbolo do instagram" />
+                            <a href="https://www.instagram.com/keli.delicata.pmu/" target='_blank'>
+                                <img src={instagram} alt="Simbolo do instagram" className={`${styles.FooterImg}`}/>
                             </a>
-                            <a href="https://youtube.com">
-                                <img src={youtube} alt="Simbolo do youtube" />
+                            <a href="https://www.youtube.com/@keli.delicatapmu" target='_blank'>
+                                <img src={youtube} alt="Simbolo do youtube" className={`${styles.FooterImg}`}/>
                             </a>
-                            <a href="https://youtube.com">
-                                <img src={whatsapp} alt="Simbolo do whatsapp" />
+                            <a href="https://api.whatsapp.com/send?phone=5521969751879" target='_blank'>
+                                <img src={whatsapp} alt="Simbolo do whatsapp" className={`${styles.FooterImg}`}/>
                             </a>
                         </div>
                     </div>

@@ -73,6 +73,7 @@ const Serviços = () => {
                 <p className="text-light text-start mb-3 p-4">Cada sessão é rápida e personalizada para garantir o melhor resultado possível. Dependendo da profundidade e da cor do pigmento, pode precisar de mais de uma sessão, mas já verá melhorias desde a primeira!</p>
             </div>
             <Remocao />
+            <h2 className="text-light text-center">Para agendar o seu procedimento, nos chame no Whatsapp.</h2>
         </section>
     );
 }

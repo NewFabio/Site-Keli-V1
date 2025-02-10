@@ -4,9 +4,6 @@ import React, { useState, useEffect } from "react";
 import {motion} from 'motion/react';
 import FadeIn from "../components/Motion/FadeIn";
 
-// import carousel
-import Carousel from '../components/Carousel/CarouselPubli';
-
 // import imagem
 import woman from '../../src/images/woman.jpg';
 import selo from '../../src/images/selo.png';
@@ -55,7 +52,6 @@ const Sobre = () => {
 
     return (
         <section className="container my-3">
-            <Carousel />
             <div className="d-flex flex-column align-items-center">
                 <motion.div 
                     variants={FadeIn('right', 0.3)}

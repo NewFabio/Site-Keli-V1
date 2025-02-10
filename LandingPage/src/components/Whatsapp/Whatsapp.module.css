@@ -1,0 +1,25 @@
+
+@keyframes piscar {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .btn {
+    animation: piscar 1.5s infinite ease-in-out; /* Animação contínua */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    transform: scale(1.2); /* Aumenta um pouco ao passar o mouse */
+  }
+  

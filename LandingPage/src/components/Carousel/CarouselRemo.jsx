@@ -1,5 +1,7 @@
 import React from "react";
 
+//Css
+import styles from './CarouselRemo.module.css';
 
 // imagens
 import img4 from '../../images/img4.jpg';
@@ -14,19 +16,19 @@ const CarouselRemo = () => {
         <div id="carouselIndicador1" className="carousel slide w-auto h-auto mb-3" data-bs-ride= "carousel">
             <div className="carousel-inner border border-5">
                 <div className="carousel-item active">
-                    <img src={img4} alt="procedimento de remoçao" className="d-block w-100" />
+                <img src={img4} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} />
                 </div>
                 <div className="carousel-item">
-                    <img src={img5} alt="procedimento de remoçao" className="d-block w-100" />
+                    <img src={img5} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} />
                 </div>
                 <div className="carousel-item">
-                    <img src={img6} alt="procedimento de remoçao" className="d-block w-100" />
+                    <img src={img6} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} />
                 </div>
                 <div className="carousel-item">
-                    <img src={img9} alt="procedimento de remoçao" className="d-block w-100" />
+                    <img src={img9} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} />
                 </div>
                 <div className="carousel-item">
-                    <img src={img11} alt="procedimento de remoçao" className="d-block w-100" />
+                    <img src={img11} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} />
                 </div>
             </div>
             <button 

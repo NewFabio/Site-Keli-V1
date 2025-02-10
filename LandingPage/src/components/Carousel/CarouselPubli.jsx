@@ -1,5 +1,13 @@
 import React from "react";
 
+// Css
+import styles from './Carouselpubli.module.css';
+
+// Imagens
+import img1 from '../../images/curso1.png';
+import img2 from '../../images/curso2.png';
+import img3 from '../../images/curso3.png';
+
 const Carousel = () => {
     return (
         <div id="carouselIndicador" className="carousel slide w-auto h-auto mb-3" data-bs-ride= "carousel">
@@ -27,25 +35,13 @@ const Carousel = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src="https://placehold.co/300x100" alt="imagem" className="d-block w-100" />
-                    <div className="carousel-caption d-none d-md-block text-dark">
-                        <h5>Slide 1</h5>
-                        <p>Texto sobre o slide 1</p>
-                    </div>
+                    <img src={img1} alt="imagem" className={`${styles.bgContainer} d-block w-100`} />
                 </div>
                 <div className="carousel-item">
-                    <img src="https://placehold.co/300x100" alt="imagem" className="d-block w-100" />
-                    <div className="carousel-caption d-none d-md-block text-dark">
-                        <h5>Slide 2</h5>
-                        <p>Texto sobre o slide 2</p>
-                    </div>
+                    <img src={img2} alt="imagem" className={`${styles.bgContainer} d-block w-100`} />
                 </div>
                 <div className="carousel-item">
-                    <img src="https://placehold.co/300x100" alt="imagem" className="d-block w-100" />
-                    <div className="carousel-caption d-none d-md-block text-dark">
-                        <h5>Slide 3</h5>
-                        <p>Texto sobre o slide 3</p>
-                    </div>
+                    <img src={img3} alt="imagem" className={`${styles.bgContainer} d-block w-100`} />
                 </div>
             </div>
             <button 

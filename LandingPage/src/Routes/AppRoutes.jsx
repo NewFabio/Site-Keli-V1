@@ -10,11 +10,13 @@ import Sobre from '../pages/Sobre';
 import Serviços from '../pages/Serviços';
 import Cursos from '../pages/Cursos';
 import Cuidados from '../pages/Cuidados';
+import Whatsapp from "../components/Whatsapp/Whatsapp";
 
 const AppRoutes = () => {
     return (
         <Router>
             <Header />
+            <Whatsapp />
             <Routes>
                 <Route exact path="/" element={<Sobre/>} />
                 <Route path="/serviços" element={<Serviços/>} />
