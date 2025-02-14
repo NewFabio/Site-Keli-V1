@@ -11,7 +11,7 @@ import img3 from '../images/curso3.png';
 
 const Cursos = () => {
     return (
-        <div className="container">
+        <div className="container-lg">
             {/* <Carousel /> */}
             <h1 className="text-light text-center">Nossos Cursos</h1>
             <section className="d-flex flex-row gap-3 flex-wrap justify-content-center py-4">

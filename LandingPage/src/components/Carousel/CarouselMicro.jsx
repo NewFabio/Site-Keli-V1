@@ -18,7 +18,7 @@ import img14 from '../../images/img14.jpg';
 const Carousel = () => {
 
     return (
-        <div style={{width: 'auto'}}>
+        <div className="container-lg" style={{width: 'auto'}}>
             <div id="carouselIndicador" className='carousel slide carousel-fade' data-bs-ride= "carousel">
                 <div className='carousel-inner border border-5'>
                     <div className='carousel-item active'>

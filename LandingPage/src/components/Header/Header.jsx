@@ -28,7 +28,7 @@ function Header() {
                             <Link to="/cursos" className="nav-link" aria-current="page" onClick={handleClick}>Cursos</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/cuidados" className="nav-link" aria-current="page" onClick={handleClick}>Cuidados</Link>
+                            <Link to="/cuidados" className="nav-link" aria-current="page" onClick={handleClick}>Mais Informações</Link>
                         </li>
                     </ul>
                 </div>

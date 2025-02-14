@@ -31,7 +31,7 @@ const Serviços = () => {
     };
 
     return (
-        <section className='container my-3'>
+        <section className='container-lg my-3'>
             <div className="d-flex flex-column align-items-center text-start">
                 <h1 className="text-light fs-1 text-center fw-bold text-wrap">MICROPIGMENTAÇÃO DE SOBRANCELHAS</h1>
                 

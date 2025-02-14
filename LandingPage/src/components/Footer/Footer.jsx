@@ -50,46 +50,38 @@ const Footer = () => {
                         <ul className="list-unstyled">
                             <li className="mb-2" >
                                 <a      
-                                    className='text-decoration-none' href="" 
-                                    target='_blank'>Curso micro completo
+                                    className='text-decoration-none' href="https://hotmart.com/pt-br/marketplace/produtos/designer-de-sobrancelhas-do-iniciante-ao-avancado/P50259216A?sck=HOTMART_PRODUCT_PAGE" 
+                                    target='_blank'>Curso Designer de Sobrancelhas
                                 </a>
                             </li>
                             <li className="mb-2">
                                 <a 
-                                    href=""
+                                    href="https://hotmart.com/pt-br/marketplace/produtos/curso-de-micropigmentacao-do-iniciante-ao-avancado-delicata/J52154156V"
                                     className='text-decoration-none'
                                     target='_blank'
-                                >Curso avançado
+                                >Curso Nanoblading - Técnica Delicata
                                 </a>
                             </li>
                             <li className="mb-2">
                                 <a 
-                                    href=""
+                                    href="https://hotmart.com/pt-br/marketplace/produtos/curso-de-especializacao-de-microblading/U40289074J?sck=HOTMART_PRODUCT_PAGE"
                                     className='text-decoration-none'
                                     target='_blank'
-                                    >Curso design
+                                    >Curso Especialização - Técnica Delicata
                                 </a>
                             </li>
                             <li className="mb-2">
                                 <a 
-                                    href=""
+                                    href="https://drive.google.com/file/d/1_kP-BrcD5ZVIPajoqc4cwLAZzAB7NpgC/view?usp=drivesdk"
                                     className='text-decoration-none'
-                                    target='_blank'
-                                    >Curso 2 em 1
+                                    >Dowload PDF cuidados pós Remoção
                                 </a>
                             </li>
                             <li className="mb-2">
                                 <a 
-                                    href=""
+                                    href="https://drive.google.com/file/d/1_nqTFG7sJyw3arw1QkTdi59H_SGTCazX/view?usp=drivesdk"
                                     className='text-decoration-none'
-                                    >Dowload pdf cuidados pós remoção
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a 
-                                    href=""
-                                    className='text-decoration-none'
-                                    >Dowload pdf cuidados sobrancelha
+                                    >Dowload PDF cuidados pós Microblanding
                                 </a>
                             </li>
                         </ul>
