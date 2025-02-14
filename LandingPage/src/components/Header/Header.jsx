@@ -12,7 +12,7 @@ function Header() {
     return (
         <div className="navbar navbar-expand-md navbar-dark" style={{backgroundColor: "#0E424D"}}>
             <nav className="container">
-                <span className="navbar-text text-light" style={{fontWeight: '200'}} >Estúdio<span style={{fontFamily:'Playwrite in', fontWeight:'400'}}>Delicata</span></span>
+                <span className="navbar-text text-light" style={{fontWeight: '300'}} >ESTÚDIO<span style={{fontFamily:'Playwrite in', fontWeight:'600'}}>Delicata</span></span>
                 <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHumburguerMenu" aria-controls="navbarHumburguerMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
