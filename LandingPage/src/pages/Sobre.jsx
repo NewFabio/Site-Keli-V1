@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 
+// Map
+import Map from '../components/Map/Map';
+
 // import motion
 import {motion} from 'motion/react';
 import FadeIn from "../components/Motion/FadeIn";
@@ -89,7 +92,7 @@ const Sobre = () => {
                     whileInView={'show'}
                     viewport={{once: true, amount: 0.5}}
 
-                    className="col-12 col-md-6 border border-5" style={imagem}>
+                    className="col-12 col-md-5 border border-5" style={imagem}>
                     
                 </motion.div>
                 <div className="d-flex flex-column align-items-center justify-content-center p-4 bg-body my-3 rounded-3">
@@ -159,7 +162,7 @@ const Sobre = () => {
                     initial="hidden"
                     whileInView={'show'}
                     viewport={{once: true, amount: 0.5}}
-                    className="col-12 col-md-6 border border-5" style={imagem3}>
+                    className="col-12 col-md-5 border border-5" style={imagem3}>
                 </motion.div>
             </div>
             {/* comentarios */}
@@ -181,6 +184,7 @@ const Sobre = () => {
                 ))}
                 </div>
             </div>
+            <Map />
         </section>
     );
 }
