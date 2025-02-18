@@ -19,6 +19,7 @@ const Map = () => {
 
     return (
         <div className='my-3'>
+            <h1 className='text-center text-light'>Nossa Localização</h1>
             { isLoaded && (
                 <GoogleMap
                     mapContainerStyle = {{
