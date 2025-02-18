@@ -39,6 +39,7 @@ const Map = () => {
                     </div>
                 </GoogleMap>
             )}
+            <p className='text-center text-li'>R. Dr. Mario Vianna, 734 - Santa Rosa, Niterói - RJ, 24241-002</p>
         </div>
     )
 }
