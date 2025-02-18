@@ -24,7 +24,7 @@ const Cuidados = () => {
                     </div>
                 </div>
             </div>
-            <div className="ratio ratio-16x9">
+            <div className="ratio ratio-16x9 container-sm">
                 <iframe src="https://www.youtube.com/embed/ROwSBhG2INs?si=ZLESqv1FK23RtM5Z" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
         </article>
