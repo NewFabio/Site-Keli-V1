@@ -7,7 +7,7 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
     return (
-        <footer className=" text-light py-4">
+        <footer className=" text-light py-2">
             <div className="container text-start">
                 {/* Seção de Links */}
                 <div className="row">
@@ -85,13 +85,11 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-
-                {/* Linha de Direitos Autorais */}
-                <div className="text-center mt-3">
+            </div>
+            <div className="d-flex justify-content-between container-fluid">
                     <p className="mb-0">&copy; 2025 Estúdio Delicata. Todos os direitos reservados.</p>
                     <p className="mb-0">Desenvolvido By <a href="#">Fabio Developer</a>.</p>
                 </div>
-            </div>
         </footer>
     )
 }

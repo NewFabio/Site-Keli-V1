@@ -11,14 +11,14 @@ function Header() {
     return (
         <div className="navbar navbar-expand-md navbar-dark" style={{backgroundColor: "#0E424D"}}>
             <nav className="container">
-                <span className="navbar-text text-light" style={{fontWeight: '300'}} >ESTÚDIO<span style={{fontFamily:'Playwrite in', fontWeight:'600'}}>Delicata</span></span>
+                <span className="navbar-text text-light" style={{fontWeight: '300'}} >ESTÚDIO DELICATA</span>
                 <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHumburguerMenu" aria-controls="navbarHumburguerMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse  justify-content-end" id="navbarHumburguerMenu">
                     <ul className="navbar-nav text-center">
                         <li className="nav-item">
-                            <Link to="/" className="nav-link" aria-current="page" onClick={handleClick}>O Estúdio Delicata</Link>
+                            <Link to="/" className="nav-link active" aria-current="page" onClick={handleClick}>O Estúdio Delicata</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/serviços" className="nav-link" aria-current="page" onClick={handleClick}>Procedimentos</Link>
