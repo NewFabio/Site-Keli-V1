@@ -1,5 +1,3 @@
-import React from "react";
-
 // Map
 import Map from '../components/Map/Map';
 
@@ -132,7 +130,7 @@ const Sobre = () => {
                         height="70"
                     />
                     <h5><a href={comment.link} target="_blank">{comment.name}</a></h5>
-                    <p className="text-muted">"{comment.comment}"</p>
+                    <p className="text-muted">{comment.comment}</p>
                     </div>
                 ))}
                 </div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 // Css
 import styles from './CarouselMicro.module.css';
 

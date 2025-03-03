@@ -1,4 +1,3 @@
-import React from 'react';
 //componentes importados
 import AppRoutes from './Routes/AppRoutes';
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 // import motion
 import {motion} from 'motion/react';
 import FadeIn from "../components/Motion/FadeIn";

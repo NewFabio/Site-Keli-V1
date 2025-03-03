@@ -1,5 +1,3 @@
-import React from 'react';
-
 import youtube from '../../images/youtube.png';
 import instagram from '../../images/instagram.png';
 import facebook from '../../images/facebook.png';
