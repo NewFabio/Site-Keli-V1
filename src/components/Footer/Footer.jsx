@@ -86,9 +86,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="d-flex justify-content-between container-fluid">
-                    <p className="mb-0">&copy; 2025 Estúdio Delicata. Todos os direitos reservados.</p>
-                    <p className="mb-0">Desenvolvido By <a href="#">Fabio Developer</a>.</p>
+            <div className="d-sm-flex flex-row justify-content-between container">
+                    <p>&copy; 2025 Estúdio Delicata. Todos os direitos reservados.</p>
+                    <p>Desenvolvido By <a href="#">Fabio Developer</a>.</p>
                 </div>
         </footer>
     )

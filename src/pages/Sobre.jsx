@@ -7,8 +7,8 @@ import FadeIn from "../components/Motion/FadeIn";
 
 // import imagem
 import woman from '../../src/images/woman.jpg';
-import selo from '../../src/images/selo.png';
-import woman2 from '../../src/images/woman2.jpg';
+import selo from '../../src/images/selo.webp';
+import woman2 from '../../src/images/woman2.webp';
 import carol from '../../src/images/carol.png';
 import helena from '../../src/images/helena.png';
 import leda from '../../src/images/leda.png';
@@ -22,7 +22,8 @@ const Sobre = () => {
         backgroundRepeat: "no-repeat",
         borderRadius: 'none',
         minHeight: '80px',
-        minWidth: '80px'
+        minWidth: '80px',
+        loading: 'lazy',
     };
 
     // Comentarios
@@ -64,7 +65,7 @@ const Sobre = () => {
 
                         className="col-md-4">
 
-                        <img src={woman} alt="foto de keli" style={{width: '100%' }} className="rounded-circle border-start border-5"/>
+                        <img src={woman} alt="foto de keli" style={{width: '100%', height: '100%' }} className="rounded-circle border-start border-5"/>
                         
                     </motion.div>
                     <motion.div 
@@ -72,20 +73,20 @@ const Sobre = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: true, amount: 0.5}}
-                        className="d-flex flex-column align-items-center justify-content-center p-4 bg-body my-3 rounded-3">
-                        <p className="text-dark">
+                        className="d-flex flex-column align-items-center justify-content-center p-4 my-3">
+                        <p className="text-light">
                             Keli Oliveira Delicata é uma renomada profissional na área de micropigmentação, especializada na técnica que leva seu nome, a técnica Delicata. Essa técnica se destaca pela aplicação de traços suaves e delicados, que proporcionam uma harmonização perfeita e natural das sobrancelhas, dando aos resultados um aspecto sofisticado e de alto padrão.
                         </p>
 
-                        <p className="text-dark">
+                        <p className="text-light">
                             Além de sua prática como micropigmentadora, Keli também compartilha seu vasto conhecimento com outros profissionais através de cursos online. Esses cursos são projetados para atender desde iniciantes até especialistas que buscam se aprimorar na técnica Delicata. O conteúdo dos cursos é cuidadosamente elaborado, permitindo que os alunos dominem a arte da micropigmentação com excelência.
                         </p>
 
-                        <p className="text-dark">
+                        <p className="text-light">
                                 Keli Oliveira Delicata é altamente reconhecida no ramo da beleza, e sua técnica vem conquistando admiradores e alunos em diversas regiões. Ela também disponibiliza seu trabalho e recursos em plataformas como blogs e vídeos demonstrativos, buscando sempre educar e inovar no mercado de micropigmentação.
                         </p>
 
-                        <p className="text-dark">
+                        <p className="text-light">
                                 Por meio de seu trabalho e ensinamentos, ela tem contribuído significativamente para a evolução da micropigmentação, oferecendo uma técnica que se destaca pela precisão e naturalidade nos resultados, além de compartilhar sua expertise com outros profissionais da área.
                         </p>
                     </motion.div>
@@ -97,12 +98,12 @@ const Sobre = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: true, amount: 0.5}}
-                        className="d-flex flex-column align-items-center justify-content-center p-4 bg-body my-3 rounded-3">
-                        <div className="d-block" style={imagem2}></div>
-                        <p className="text-dark fw-bold">
+                        className="d-flex flex-column align-items-center justify-content-center p-4 my-3">
+                        <div className="d-block my-3" style={imagem2}></div>
+                        <p className="text-light fw-bold">
                             Ganhadora em 1º lugar do prêmio de Melhor Curso de Micropigmentação nos anos de 2020, 2021 e 2022 por instituições como IMBRAP, IMPEQ e Latin American Quality Institute.
                         </p>
-                        <p className="text-dark">
+                        <p className="text-light">
                             Em 2020, Keli Oliveira foi reconhecida com o <span className="fw-bold">Prêmio Top of Mind</span> na área de micropigmentação, consolidando seu nome como uma das profissionais mais lembradas e influentes do setor. Esse prêmio é um dos mais importantes do mercado, pois mede a força da marca na mente dos consumidores e profissionais, destacando aqueles que realmente fazem a diferença.
                         </p>              
                     </motion.div>
@@ -112,19 +113,20 @@ const Sobre = () => {
                         whileInView={'show'}
                         viewport={{once: true, amount: 0.5}}
                         className=" col-sm-4">
-                            <img src={woman2} alt="foto de keli" style={{width: '100%' }} className="rounded-circle border-end border-5"/>
+                            <img src={woman2} alt="foto de keli" loading='lazy' style={{width: '100%', height: '100%' }} className="rounded-circle border-end border-5"/>
                     </motion.div>
                 </div>
             </div>
             {/* comentarios */}
-            <div className="mt-3 bg-light">
-                <h2 className="text-center my-3">Feedback de clientes</h2>
+            <div className="mt-3 p-2" style={{backgroundColor: "rgba(0, 0, 0, 0.5)"}}>
+                <h2 className="text-center text-light my-3">Feedback de clientes</h2>
                 <div className="row justify-content-center">
                 {comments.map((comment) => (
                     <div key={comment.id} className="col-md-4 text-center mb-4">
                     <img
                         src={comment.photo}
                         alt={comment.name}
+                        loading='lazy'
                         className="rounded-circle mb-2"
                         width="70"
                         height="70"

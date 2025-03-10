@@ -3,14 +3,13 @@ import {motion} from 'motion/react';
 import FadeIn from "../components/Motion/FadeIn";
 
 // Imagens
-import img1 from '../images/curso1.png';
-import img2 from '../images/curso2.png';
-import img3 from '../images/curso3.png';
+import img1 from '../images/curso1.webp';
+import img2 from '../images/curso2.webp';
+import img3 from '../images/curso3.webp';
 
 const Cursos = () => {
     return (
         <div className="container-lg">
-            {/* <Carousel /> */}
             <h1 className="text-light text-center">Nossos Cursos</h1>
             <section className="d-flex flex-row gap-3 flex-wrap justify-content-center py-4">
                 <motion.div 
@@ -21,7 +20,7 @@ const Cursos = () => {
                     whileInView={'show'}
                     viewport={{once: true, amount: 0.5}}
                     >
-                    <img src={img1} className="card-img-top" alt="Designer Sobrancelha"/>
+                    <img src={img1} className="card-img-top" loading='lazy' width={100} height={300} alt="Designer Sobrancelha"/>
                     <div className="card-body">
                         <h5 className="card-title">Designer de Sobrancelhas</h5>
                         <p className="card-text">Aprenda desde as técnicas básicas até as mais avançadas para design de sobrancelhas. Este curso foi desenvolvido para iniciantes ou para profissionais que ja atuam e queiram aperfeiçoar e aprender a minha técnica de designer harmonioso, que realça a sobrancelha da cliente elevando ainda mais a beleza.</p>
@@ -37,7 +36,7 @@ const Cursos = () => {
                     whileInView={'show'}
                     viewport={{once: true, amount: 0.5}}
                     >
-                    <img src={img2} className="card-img-top" alt="Designer Sobrancelha"/>
+                    <img src={img2} className="card-img-top" loading='lazy' width={100} height={300}  alt="Designer Sobrancelha"/>
                     <div className="card-body">
                         <h5 className="card-title">Curso Nanoblading - Técnica Delicata</h5>
                         <p className="card-text">Este curso foi desenvolvido para profissionais que já possuem o curso de designer de sobrancelhas. Ele foi elaborado para quem esta iniciando do zero absoluto, e para quem já atua na área da micropigmentação e deseja se especializar na técnica DELICATA(Curso 2 em 1). Leva você do iniciante ao avançado na TÉCNICA DELICATA</p>
@@ -53,7 +52,7 @@ const Cursos = () => {
                     whileInView={'show'}
                     viewport={{once: true, amount: 0.5}}
                     >
-                    <img src={img3} className="card-img-top" alt="Designer Sobrancelha"/>
+                    <img src={img3} className="card-img-top" loading='lazy' width={100} height={300}  alt="Designer Sobrancelha"/>
                     <div className="card-body">
                         <h5 className="card-title">Especialização - Técnica Delicata</h5>
                         <p className="card-text">Este curso foi desenvolvido para profissionais que ja possuem o curso de iniciante na Microblading. É um curso que tem como maior foco ensinar a Técnica Delicata, que consiste em uma alta perfomance de arquitetura de fios com traços delicados e movimentos suaves, que dão harmonização para uma microblading de alto padrão!!!</p>

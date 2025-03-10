@@ -2,11 +2,11 @@
 import styles from './CarouselRemo.module.css';
 
 // imagens
-import img4 from '../../images/img4.jpg';
-import img5 from '../../images/img5.jpg';
-import img6 from '../../images/img6.jpg';
-import img9 from '../../images/img9.jpg';
-import img11 from '../../images/img11.jpg';
+import img4 from '../../images/img4.webp';
+import img5 from '../../images/img5.webp';
+import img6 from '../../images/img6.webp';
+import img9 from '../../images/img9.webp';
+import img11 from '../../images/img11.webp';
 
 
 const CarouselRemo = () => {
@@ -14,19 +14,19 @@ const CarouselRemo = () => {
         <div id="carouselIndicador1" className="carousel slide w-auto h-auto mb-3" data-bs-ride= "carousel">
             <div className="carousel-inner border border-5">
                 <div className="carousel-item active">
-                <img src={img4} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} />
+                <img src={img4} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                 </div>
                 <div className="carousel-item">
-                    <img src={img5} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} />
+                    <img src={img5} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                 </div>
                 <div className="carousel-item">
-                    <img src={img6} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} />
+                    <img src={img6} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                 </div>
                 <div className="carousel-item">
-                    <img src={img9} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} />
+                    <img src={img9} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                 </div>
                 <div className="carousel-item">
-                    <img src={img11} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} />
+                    <img src={img11} alt="procedimento de remoçao" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                 </div>
             </div>
             <button 

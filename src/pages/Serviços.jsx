@@ -5,7 +5,7 @@ import Micro from '../components/Carousel/CarouselMicro';
 import Remocao from '../components/Carousel/CarouselRemo';
 
 // foto maquina
-import maquina from '../../src/images/maquina.jpg';
+import maquina from '../../src/images/maquina.webp';
 
 const Serviços = () => {
     
@@ -28,6 +28,7 @@ const Serviços = () => {
         backgroundRepeat: "no-repeat",
         borderRadius: '20%',
         height: isMobile ? "300px" : "80vh",
+        loading: 'lazy',
     };
 
     return (

@@ -2,15 +2,15 @@
 import styles from './CarouselMicro.module.css';
 
 // imagens
-import img1 from '../../images/img1.jpg';
-import img2 from '../../images/img2.jpg';
-import img3 from '../../images/img3.jpg';
-import img7 from '../../images/img7.jpg';
-import img8 from '../../images/img8.jpg';
-import img10 from '../../images/img10.jpg';
-import img12 from '../../images/img12.jpg';
-import img13 from '../../images/img13.jpg';
-import img14 from '../../images/img14.jpg';
+import img1 from '../../images/img1.webp';
+import img2 from '../../images/img2.webp';
+import img3 from '../../images/img3.webp';
+import img7 from '../../images/img7.webp';
+import img8 from '../../images/img8.webp';
+import img10 from '../../images/img10.webp';
+import img12 from '../../images/img12.webp';
+import img13 from '../../images/img13.webp';
+import img14 from '../../images/img14.webp';
 
 
 const Carousel = () => {
@@ -20,31 +20,31 @@ const Carousel = () => {
             <div id="carouselIndicador" className='carousel slide carousel-fade' data-bs-ride= "carousel">
                 <div className='carousel-inner border border-5'>
                     <div className='carousel-item active'>
-                        <img src={img1} alt="foto sobrancelhas e olho verde" className={`${styles.bgContainer} d-block w-100`}/>
+                        <img src={img1} alt="foto sobrancelhas e olho verde" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                     </div>
                     <div className="carousel-item">
-                        <img src={img2} alt="foto sobrancelhas e olho" className={`${styles.bgContainer} d-block w-100`} />
+                        <img src={img2} alt="foto sobrancelhas e olho" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                     </div>
                     <div className="carousel-item">
-                        <img src={img3} alt="sobrancelhas" className={`${styles.bgContainer} d-block w-100`} />
+                        <img src={img3} alt="sobrancelhas" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                     </div>
                     <div className="carousel-item">
-                        <img src={img7} alt="imagem" className={`${styles.bgContainer} d-block w-100`} />
+                        <img src={img7} alt="imagem" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                     </div>
                     <div className="carousel-item">
-                        <img src={img8} alt="imagem" className={`${styles.bgContainer} d-block w-100`} />
+                        <img src={img8} alt="imagem" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                     </div>
                     <div className="carousel-item">
-                        <img src={img10} alt="imagem" className={`${styles.bgContainer} d-block w-100`} />
+                        <img src={img10} alt="imagem" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                     </div>
                     <div className="carousel-item">
-                        <img src={img12} alt="imagem" className={`${styles.bgContainer} d-block w-100`} />
+                        <img src={img12} alt="imagem" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                     </div>
                     <div className="carousel-item">
-                        <img src={img13} alt="imagem" className={`${styles.bgContainer} d-block w-100`} />
+                        <img src={img13} alt="imagem" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                     </div>
                     <div className="carousel-item">
-                        <img src={img14} alt="imagem" className={`${styles.bgContainer} d-block w-100`} />
+                        <img src={img14} alt="imagem" className={`${styles.bgContainer} d-block w-100`} style={{width: '100%', height: 'auto'}}/>
                     </div>
                 </div>
                 <button 
