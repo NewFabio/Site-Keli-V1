@@ -68,7 +68,7 @@ const Sobre = () => {
                         <img src={woman} alt="foto de keli" style={{width: '100%', height: '100%' }} className="rounded-circle border-start border-5"/>
                         
                     </motion.div>
-                    <motion.div 
+                    <motion.article 
                         variants={FadeIn('left', 0.3)}
                         initial="hidden"
                         whileInView={'show'}
@@ -89,11 +89,11 @@ const Sobre = () => {
                         <p className="text-light">
                                 Por meio de seu trabalho e ensinamentos, ela tem contribuído significativamente para a evolução da micropigmentação, oferecendo uma técnica que se destaca pela precisão e naturalidade nos resultados, além de compartilhar sua expertise com outros profissionais da área.
                         </p>
-                    </motion.div>
+                    </motion.article>
                 </div>
                 
                 <div className="d-flex gap-2 align-items-center flex-column-reverse flex-md-row text-center">
-                    <motion.div 
+                    <motion.article 
                         variants={FadeIn('right', 0.3)}
                         initial="hidden"
                         whileInView={'show'}
@@ -106,7 +106,7 @@ const Sobre = () => {
                         <p className="text-light">
                             Em 2020, Keli Oliveira foi reconhecida com o <span className="fw-bold">Prêmio Top of Mind</span> na área de micropigmentação, consolidando seu nome como uma das profissionais mais lembradas e influentes do setor. Esse prêmio é um dos mais importantes do mercado, pois mede a força da marca na mente dos consumidores e profissionais, destacando aqueles que realmente fazem a diferença.
                         </p>              
-                    </motion.div>
+                    </motion.article>
                     <motion.div 
                         variants={FadeIn('left', 0.3)}
                         initial="hidden"
