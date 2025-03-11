@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 function Header() {
 
     const handleClick = () => {
@@ -8,26 +8,28 @@ function Header() {
         }
     };
 
+    const location = useLocation(); // Obtem a rota atual
+
     return (
         <div className="navbar navbar-expand-md navbar-dark" style={{backgroundColor: "#0E424D"}}>
             <nav className="container">
-                <span className="navbar-text text-light" style={{fontWeight: '300'}} >ESTÚDIO DELICATA</span>
+                <span className="navbar-text text-light" style={{fontWeight: '300'}} >KELI DELICATA</span>
                 <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHumburguerMenu" aria-controls="navbarHumburguerMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse  justify-content-end" id="navbarHumburguerMenu">
                     <ul className="navbar-nav text-center">
                         <li className="nav-item">
-                            <Link to="/" className="nav-link active" aria-current="page" onClick={handleClick}>O Estúdio Delicata</Link>
+                            <Link to="/" className={`nav-link ${location.pathname === "/" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Inicio</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/serviços" className="nav-link" aria-current="page" onClick={handleClick}>Procedimentos</Link>
+                            <Link to="/servicos" className={`nav-link ${location.pathname === "/servicos" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Procedimentos</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/cursos" className="nav-link" aria-current="page" onClick={handleClick}>Cursos</Link>
+                            <Link to="/cursos" className={`nav-link ${location.pathname === "/cursos" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Cursos</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/cuidados" className="nav-link" aria-current="page" onClick={handleClick}>Mais Informações</Link>
+                            <Link to="/cuidados" className={`nav-link ${location.pathname === "/cuidados" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Mais Informações</Link>
                         </li>
                     </ul>
                 </div>

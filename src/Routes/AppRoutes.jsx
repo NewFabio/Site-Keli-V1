@@ -18,7 +18,7 @@ const AppRoutes = () => {
             <Whatsapp />
             <Routes>
                 <Route exact path="/" element={<Sobre/>} />
-                <Route path="/serviços" element={<Serviços/>} />
+                <Route path="/servicos" element={<Serviços/>} />
                 <Route path="/cursos" element={<Cursos/>} />
                 <Route path="/cuidados" element={<Cuidados/>} />
             </Routes>
