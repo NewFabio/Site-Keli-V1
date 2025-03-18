@@ -63,7 +63,7 @@ const Sobre = () => {
                         whileInView={'show'}
                         viewport={{once: true, amount: 0.5}}
 
-                        className="col-md-4">
+                        className="col-sm-4">
 
                         <img src={woman} alt="foto de keli" style={{width: '100%', height: '100%' }} className="rounded-circle border-start border-5"/>
                         

@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 // compents
 import Micro from '../components/Carousel/CarouselMicro';
 import Remocao from '../components/Carousel/CarouselRemo';
@@ -9,34 +7,13 @@ import maquina from '../../src/images/maquina.webp';
 
 const Serviços = () => {
     
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-        
-    // monitora o tamanho da tela para detectar se é mobile
-    useEffect(() => {
-        const handleResize = () => {
-        setIsMobile(window.innerWidth < 768);
-        };
-    
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    });
-
-    const img = {
-        backgroundImage: `url(${maquina})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        borderRadius: '20%',
-        height: isMobile ? "300px" : "80vh",
-        loading: 'lazy',
-    };
-
     return (
         <section className='container-lg my-3'>
+            {/* micropigmentacao */}
             <div className="d-flex flex-column align-items-center text-start">
                 <h1 className="text-light fs-1 text-center fw-bold text-wrap">MICROPIGMENTAÇÃO DE SOBRANCELHAS</h1>
                 
-                <p className="text-light p-4">Imagina acordar todos os dias com sobrancelhas perfeitas, sem precisar gastar tempo a preenchê-las com maquilhagem. Com a micropigmentação de sobrancelhas, isso torna-se realidade! Este procedimento é ideal para quem quer sobrancelhas naturais, bem desenhadas e definidas sem esforço diário. Utilizamos técnicas avançadas para criar fios ultra-realistas ou um efeito sombreado suave, adaptado ao teu rosto e estilo. O resultado? Um olhar expressivo, jovem e harmonioso!</p>
+                <p className="text-light p-3">Imagina acordar todos os dias com sobrancelhas perfeitas, sem precisar gastar tempo a preenchê-las com maquilhagem. Com a micropigmentação de sobrancelhas, isso torna-se realidade! Este procedimento é ideal para quem quer sobrancelhas naturais, bem desenhadas e definidas sem esforço diário. Utilizamos técnicas avançadas para criar fios ultra-realistas ou um efeito sombreado suave, adaptado ao teu rosto e estilo. O resultado? Um olhar expressivo, jovem e harmonioso!</p>
 
                 <h2 className="text-light text-center fw-bold p-2">Vantagens da micropigmentação</h2>
                 <ul className="text-light list-unstyled p-4 fw-bold">
@@ -47,31 +24,35 @@ const Serviços = () => {
                 </ul>
             </div>
             <Micro />
-            <div className="d-flex flex-column align-items-center text-start pt-4">
-                <h1 className="text-light fs-1 text-center fw-bold text-wrap p-2">Remoção de Micropigmentação e Tatuagens a Laser</h1>
+            {/* remoção */}
+            <div className="d-flex flex-column align-items-center text-start pt-1 mt-4 my-4 bg-light">
+                <h1 className="text-dark fs-1 text-center fw-bold text-wrap p-2">Remoção de Micropigmentação e Tatuagens a Laser</h1>
                 
-                <h3 className="text-light text-center fw-bold">Diga Adeus ao Que Já Não Combina Consigo!</h3>
+                <h3 className="text-dark text-center fw-bold">Diga Adeus ao Que Já Não Combina Consigo!</h3>
 
-                <p className="text-light p-4">Já fez micropigmentação de sobrancelha ou uma tatuagem e arrependeu-se do resultado? Ou simplesmente quer renovar o visual? Com a nossa remoção a laser, pode eliminar pigmentos indesejados de forma segura, eficaz e sem danificar a pele!</p>
+                <p className="text-dark p-3">Já fez micropigmentação de sobrancelha ou uma tatuagem e arrependeu-se do resultado? Ou simplesmente quer renovar o visual? Com a nossa remoção a laser, pode eliminar pigmentos indesejados de forma segura, eficaz e sem danificar a pele!</p>
 
-                <h2 className="text-light text-center fw-bold p-2">Como Funciona</h2>
+                <h2 className="text-dark text-center fw-bold p-2">Como Funciona</h2>
 
-                <p className="text-light p-4">Usamos tecnologia de laser de última geração, que fragmenta os pigmentos da pele sem causar cortes ou cicatrizes. O corpo, de forma natural, elimina esses fragmentos ao longo das semanas, resultando numa pele limpa e renovada.</p>
+                <p className="text-dark p-3">Usamos tecnologia de laser de última geração, que fragmenta os pigmentos da pele sem causar cortes ou cicatrizes. O corpo, de forma natural, elimina esses fragmentos ao longo das semanas, resultando numa pele limpa e renovada.</p>
 
-                <div className="col-12 col-md-6 border border-5" style={img}></div>
+                <div className="col-10 col-md-4">
 
-                <p className="text-light text-start mt-3 p-4">Se procura a solução mais avançada e segura para remover tatuagens e micropigmentação, a máquina <span className="fw-bold">Omer Smart</span> é a escolha perfeita! Com tecnologia de ponta e certificação com selo da <span className="fw-bold">ANVISA</span>, garante um tratamento seguro, eficaz e aprovado pelos mais altos padrões de qualidade. O laser de alta precisão quebra os pigmentos sem agredir a pele, proporcionando um processo confortável e com menos sessões do que os métodos tradicionais. Ideal para todos os tipos de pele e cores de tinta, a Omer Smart oferece resultados visíveis desde a primeira sessão, sem riscos de cicatrizes ou danos. Se deseja uma remoção segura e definitiva, esta é a melhor opção para recuperar a sua pele com confiança! </p>
+                    <img src={maquina} alt="foto de keli" loading='lazy' style={{width: '100%', height: '100%' }} className="rounded-circle border-end border-5"/>
+                </div>
 
-                <h2 className="text-light text-center fw-bold p-2">Vantagens da Remoção a Laser</h2>
+                <p className="text-dark text-start mt-3 p-3">Se procura a solução mais avançada e segura para remover tatuagens e micropigmentação, a máquina <span className="fw-bold">Omer Smart</span> é a escolha perfeita! Com tecnologia de ponta e certificação com selo da <span className="fw-bold">ANVISA</span>, garante um tratamento seguro, eficaz e aprovado pelos mais altos padrões de qualidade. O laser de alta precisão quebra os pigmentos sem agredir a pele, proporcionando um processo confortável e com menos sessões do que os métodos tradicionais. Ideal para todos os tipos de pele e cores de tinta, a Omer Smart oferece resultados visíveis desde a primeira sessão, sem riscos de cicatrizes ou danos. Se deseja uma remoção segura e definitiva, esta é a melhor opção para recuperar a sua pele com confiança! </p>
+
+                <h2 className="text-dark text-center fw-bold p-2">Vantagens da Remoção a Laser</h2>
                 
-                <ul className="text-light list-unstyled fw-bold p-4">
+                <ul className="text-dark list-unstyled fw-bold p-3">
                     <li className="mb-2">Seguro e eficaz – Sem danificar a pele.</li>
                     <li className="mb-2">Indolor ou com mínimo desconforto – Usamos técnicas que minimizam a sensação de ardor.</li>
                     <li className="mb-2">Resultados visíveis – Pigmento desaparece gradualmente sem deixar marcas.</li>
                     <li className="mb-2">Para todos os tipos de pele e pigmentos.</li>
                 </ul>
 
-                <p className="text-light text-start mb-3 p-4">Cada sessão é rápida e personalizada para garantir o melhor resultado possível. Dependendo da profundidade e da cor do pigmento, pode precisar de mais de uma sessão, mas já verá melhorias desde a primeira!</p>
+                <p className="text-dark text-start p-3">Cada sessão é rápida e personalizada para garantir o melhor resultado possível. Dependendo da profundidade e da cor do pigmento, pode precisar de mais de uma sessão, mas já verá melhorias desde a primeira!</p>
             </div>
             <Remocao />
             <h2 className="text-light text-center">Para agendar o seu procedimento, nos chame no Whatsapp.</h2>
