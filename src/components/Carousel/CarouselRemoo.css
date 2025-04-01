@@ -1,0 +1,26 @@
+.embla {
+    width: 100%;
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .embla__container {
+    display: flex;
+  }
+  
+  .embla_slide {
+    flex: 0 0 auto;
+    width: 150px; /* Ajuste o tamanho das imagens para mobile */
+    margin-right: 10px; /* Espaçamento entre as imagens */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .embla_image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bordas arredondadas opcionais */
+    transition: transform 0.3s ease-in-out;
+  }
+  

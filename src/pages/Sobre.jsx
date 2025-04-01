@@ -13,6 +13,7 @@ import carol from '../../src/images/carol.png';
 import helena from '../../src/images/helena.png';
 import leda from '../../src/images/leda.png';
 
+
 const Sobre = () => {
 
     const imagem2 = {
@@ -68,6 +69,7 @@ const Sobre = () => {
                         <img src={woman} alt="foto de keli" style={{width: '100%', height: '100%' }} className="rounded-circle border-start border-5"/>
                         
                     </motion.div>
+                    
                     <motion.article 
                         variants={FadeIn('left', 0.3)}
                         initial="hidden"
