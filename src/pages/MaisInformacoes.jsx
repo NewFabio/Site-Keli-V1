@@ -1,5 +1,5 @@
 
-const Cuidados = () => {
+const MaisInformacoes = () => {
     return (
         <article className="container-fluid mt-4 d-flex flex-column justify-content-center align-items-center">            
             <h1 className="text-center text-light mb-4">Informações importantes sobre Remoção e Micropigmentação</h1>
@@ -30,4 +30,4 @@ const Cuidados = () => {
     );
 }
 
-export default Cuidados;
+export default MaisInformacoes;

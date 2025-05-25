@@ -1,10 +1,5 @@
 // Map
 import Map from '../components/Map/Map';
-
-// import motion
-import {motion} from 'motion/react';
-import FadeIn from "../components/Motion/FadeIn";
-
 // import imagem
 import woman from '../../src/images/woman.jpg';
 import selo from '../../src/images/selo.webp';
@@ -14,7 +9,7 @@ import helena from '../../src/images/helena.png';
 import leda from '../../src/images/leda.png';
 
 
-const Sobre = () => {
+const Inicio = () => {
 
     const imagem2 = {
         backgroundImage: `url(${selo})`,
@@ -58,24 +53,13 @@ const Sobre = () => {
         <section className="container-fluid my-2">
             <div className="d-flex flex-column align-items-center">
                 <div className="d-flex gap-2 align-items-center flex-column flex-md-row text-center">
-                    <motion.div 
-                        variants={FadeIn('right', 0.3)}
-                        initial="hidden"
-                        whileInView={'show'}
-                        viewport={{once: true, amount: 0.5}}
-
-                        className="col-sm-4">
+                    <div className="col-sm-4">
 
                         <img src={woman} alt="foto de keli" style={{width: '100%', height: '100%' }} className="rounded-circle border-start border-5"/>
                         
-                    </motion.div>
+                    </div>
                     
-                    <motion.article 
-                        variants={FadeIn('left', 0.3)}
-                        initial="hidden"
-                        whileInView={'show'}
-                        viewport={{once: true, amount: 0.5}}
-                        className="d-flex flex-column align-items-center justify-content-center p-4 my-3">
+                    <article className="d-flex flex-column align-items-center justify-content-center p-4 my-3">
                         <p className="text-light">
                             Keli Oliveira Delicata é uma renomada profissional na área de micropigmentação, especializada na técnica que leva seu nome, a técnica Delicata. Essa técnica se destaca pela aplicação de traços suaves e delicados, que proporcionam uma harmonização perfeita e natural das sobrancelhas, dando aos resultados um aspecto sofisticado e de alto padrão.
                         </p>
@@ -91,16 +75,11 @@ const Sobre = () => {
                         <p className="text-light">
                                 Por meio de seu trabalho e ensinamentos, ela tem contribuído significativamente para a evolução da micropigmentação, oferecendo uma técnica que se destaca pela precisão e naturalidade nos resultados, além de compartilhar sua expertise com outros profissionais da área.
                         </p>
-                    </motion.article>
+                    </article>
                 </div>
                 
                 <div className="d-flex gap-2 align-items-center flex-column-reverse flex-md-row text-center">
-                    <motion.article 
-                        variants={FadeIn('right', 0.3)}
-                        initial="hidden"
-                        whileInView={'show'}
-                        viewport={{once: true, amount: 0.5}}
-                        className="d-flex flex-column align-items-center justify-content-center p-4 my-3">
+                    <article className="d-flex flex-column align-items-center justify-content-center p-4 my-3">
                         <div className="d-block my-3" style={imagem2}></div>
                         <p className="text-light fw-bold">
                             Ganhadora em 1º lugar do prêmio de Melhor Curso de Micropigmentação nos anos de 2020, 2021 e 2022 por instituições como IMBRAP, IMPEQ e Latin American Quality Institute.
@@ -108,15 +87,10 @@ const Sobre = () => {
                         <p className="text-light">
                             Em 2020, Keli Oliveira foi reconhecida com o <span className="fw-bold">Prêmio Top of Mind</span> na área de micropigmentação, consolidando seu nome como uma das profissionais mais lembradas e influentes do setor. Esse prêmio é um dos mais importantes do mercado, pois mede a força da marca na mente dos consumidores e profissionais, destacando aqueles que realmente fazem a diferença.
                         </p>              
-                    </motion.article>
-                    <motion.div 
-                        variants={FadeIn('left', 0.3)}
-                        initial="hidden"
-                        whileInView={'show'}
-                        viewport={{once: true, amount: 0.5}}
-                        className=" col-sm-4">
+                    </article>
+                    <div className=" col-sm-4">
                             <img src={woman2} alt="foto de keli" loading='lazy' style={{width: '100%', height: '100%' }} className="rounded-circle border-end border-5"/>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
             {/* comentarios */}
@@ -144,4 +118,4 @@ const Sobre = () => {
     );
 }
 
-export default Sobre;
+export default Inicio;

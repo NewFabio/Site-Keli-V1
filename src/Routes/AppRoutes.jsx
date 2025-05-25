@@ -5,10 +5,11 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 
 // Import das pages
-import Sobre from '../pages/Sobre';
-import Serviços from '../pages/Serviços';
+import Inicio from '../pages/Inicio';
+import Procedimentos from '../pages/Procedimentos';
 import Cursos from '../pages/Cursos';
-import Cuidados from '../pages/Cuidados';
+import MaisInformacoes from '../pages/MaisInformacoes';
+// Import do componente de WhatsApp
 import Whatsapp from "../components/Whatsapp/Whatsapp";
 
 const AppRoutes = () => {
@@ -17,10 +18,10 @@ const AppRoutes = () => {
             <Header />
             <Whatsapp />
             <Routes>
-                <Route exact path="/" element={<Sobre/>} />
-                <Route path="/servicos" element={<Serviços/>} />
+                <Route exact path="/inicio" element={<Inicio/>} />
+                <Route path="/procedimentos" element={<Procedimentos/>} />
                 <Route path="/cursos" element={<Cursos/>} />
-                <Route path="/cuidados" element={<Cuidados/>} />
+                <Route path="/maisinformacoes" element={<MaisInformacoes/>} />
             </Routes>
             <Footer />
         </Router>

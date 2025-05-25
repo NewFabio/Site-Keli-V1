@@ -1,7 +1,3 @@
-// import motion
-import {motion} from 'motion/react';
-import FadeIn from "../components/Motion/FadeIn";
-
 // Imagens
 import img1 from '../images/curso1.webp';
 import img2 from '../images/curso2.webp';
@@ -12,14 +8,7 @@ const Cursos = () => {
         <div className="container-lg">
             <h1 className="text-light text-center">Nossos Cursos</h1>
             <section className="d-flex flex-row gap-3 flex-wrap justify-content-center py-4">
-                <motion.div 
-                    className="card" 
-                    style={{width: '18rem'}}
-                    variants={FadeIn('right', 0.5)}
-                    initial="hidden"
-                    whileInView={'show'}
-                    viewport={{once: true, amount: 0.5}}
-                    >
+                <div className='card' style={{width: '18rem'}}>
                     <img src={img1} className="card-img-top" loading='lazy' width={100} height={300} alt="Designer Sobrancelha"/>
                     <div className="card-body">
                         <h5 className="card-title">Designer de Sobrancelhas</h5>
@@ -27,15 +16,8 @@ const Cursos = () => {
                         <p className="card-text">Acesso vitalício e suporte via Whatsapp para tirar dúvidas.</p>
                         <a href="https://hotmart.com/pt-br/marketplace/produtos/designer-de-sobrancelhas-do-iniciante-ao-avancado/P50259216A?sck=HOTMART_PRODUCT_PAGE" target="_blank" className="btn btn-primary">Comprar Curso</a>
                     </div>
-                </motion.div>
-                <motion.div 
-                    className="card" 
-                    style={{width: '18rem'}}
-                    variants={FadeIn('left', 0.5)}
-                    initial="hidden"
-                    whileInView={'show'}
-                    viewport={{once: true, amount: 0.5}}
-                    >
+                </div>
+                <div className='card' style={{width: '18rem'}}>
                     <img src={img2} className="card-img-top" loading='lazy' width={100} height={300}  alt="Designer Sobrancelha"/>
                     <div className="card-body">
                         <h5 className="card-title">Curso Nanoblading - Técnica Delicata</h5>
@@ -43,15 +25,8 @@ const Cursos = () => {
                         <p className="card-text">Acesso vitalício e suporte via Whatsapp para tirar dúvidas.</p>
                         <a href="https://hotmart.com/pt-br/marketplace/produtos/curso-de-micropigmentacao-do-iniciante-ao-avancado-delicata/J52154156V" target="_blank" className="btn btn-primary">Comprar Curso</a>
                     </div>
-                </motion.div>
-                <motion.div 
-                    className="card" 
-                    style={{width: '18rem'}}
-                    variants={FadeIn('right', 0.5)}
-                    initial="hidden"
-                    whileInView={'show'}
-                    viewport={{once: true, amount: 0.5}}
-                    >
+                </div>
+                <div className='card' style={{width: '18rem'}}>
                     <img src={img3} className="card-img-top" loading='lazy' width={100} height={300}  alt="Designer Sobrancelha"/>
                     <div className="card-body">
                         <h5 className="card-title">Especialização - Técnica Delicata</h5>
@@ -59,7 +34,7 @@ const Cursos = () => {
                         <p className="card-text">Acesso vitalício e suporte via Whatsapp para tirar dúvidas.</p>
                         <a href="https://hotmart.com/pt-br/marketplace/produtos/curso-de-especializacao-de-microblading/U40289074J?sck=HOTMART_PRODUCT_PAGE" target="_blank" className="btn btn-primary">Comprar Curso</a>
                     </div>
-                </motion.div>
+                </div>
             </section>
             <h2 className="text-light text-center">Em caso de dúvidas entre em contato via Whatsapp.</h2>
         </div>

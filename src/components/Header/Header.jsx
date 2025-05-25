@@ -20,16 +20,16 @@ function Header() {
                 <div className="collapse navbar-collapse  justify-content-end" id="navbarHumburguerMenu">
                     <ul className="navbar-nav text-center">
                         <li className="nav-item">
-                            <Link to="/" className={`nav-link ${location.pathname === "/" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Inicio</Link>
+                            <Link to="/inicio" className={`nav-link ${location.pathname === "/inicio" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Inicio</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/servicos" className={`nav-link ${location.pathname === "/servicos" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Procedimentos</Link>
+                            <Link to="/procedimentos" className={`nav-link ${location.pathname === "/procedimentos" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Procedimentos</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/cursos" className={`nav-link ${location.pathname === "/cursos" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Cursos</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/cuidados" className={`nav-link ${location.pathname === "/cuidados" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Mais Informações</Link>
+                            <Link to="/maisinformacoes" className={`nav-link ${location.pathname === "/maisinformacoes" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Mais Informações</Link>
                         </li>
                     </ul>
                 </div>
