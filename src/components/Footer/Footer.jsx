@@ -88,7 +88,7 @@ const Footer = () => {
             </div>
             <div className="d-sm-flex flex-row justify-content-between container">
                     <p>&copy; 2025 Estúdio Delicata. Todos os direitos reservados.</p>
-                    <p>Desenvolvido By <a href="#">Fabio Developer</a>.</p>
+                    <p>Desenvolvido By <span className='text-info'>Fabio Developer</span>.</p>
                 </div>
         </footer>
     )

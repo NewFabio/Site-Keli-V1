@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 
 //import compentes
 import Header from '../components/Header/Header';
@@ -18,6 +18,7 @@ const AppRoutes = () => {
             <Header />
             <Whatsapp />
             <Routes>
+                <Route path="/" element={<Navigate to="/inicio" replace />} />
                 <Route exact path="/inicio" element={<Inicio/>} />
                 <Route path="/procedimentos" element={<Procedimentos/>} />
                 <Route path="/cursos" element={<Cursos/>} />

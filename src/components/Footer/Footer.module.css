@@ -1,5 +1,3 @@
-
-
 .FooterImg {
     transition: transform 0.5s ease;
     display: block;
@@ -8,6 +6,7 @@
 .FooterImg:hover {
     transform: scale(1.5); /* Aumenta a imagem em 10% */
 }
+
 
 @media (min-width: 320px) {
     .FooterImg {
