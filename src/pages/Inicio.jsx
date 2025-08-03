@@ -55,7 +55,7 @@ const Inicio = () => {
                 <div className="d-flex gap-2 align-items-center flex-column flex-md-row text-center">
                     <div className="col-sm-4">
 
-                        <img src={woman} alt="foto de keli" style={{width: '100%', height: '100%' }} className="rounded-circle border-start border-5"/>
+                        <img src={woman} alt="foto de keli" style={{width: '80%', height: '80%' }} className="rounded-circle border-start border-5"/>
                         
                     </div>
                     
@@ -89,7 +89,7 @@ const Inicio = () => {
                         </p>              
                     </article>
                     <div className=" col-sm-4">
-                            <img src={woman2} alt="foto de keli" loading='lazy' style={{width: '100%', height: '100%' }} className="rounded-circle border-end border-5"/>
+                            <img src={woman2} alt="foto de keli" loading='lazy' style={{width: '80%', height: '80%' }} className="rounded-circle border-end border-5"/>
                     </div>
                 </div>
             </div>
