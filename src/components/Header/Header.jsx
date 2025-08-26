@@ -20,7 +20,7 @@ function Header() {
                 <div className="collapse navbar-collapse  justify-content-end" id="navbarHumburguerMenu">
                     <ul className="navbar-nav text-center">
                         <li className="nav-item">
-                            <Link to="/inicio" className={`nav-link ${location.pathname === "/inicio" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Inicio</Link>
+                            <Link to="/" className={`nav-link ${location.pathname === "/" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Inicio</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/procedimentos" className={`nav-link ${location.pathname === "/procedimentos" ? "active" : ""}`} aria-current="page" onClick={handleClick}>Procedimentos</Link>
